@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const box = Array.from(document.querySelectorAll('.box'));
-    const playerDisplay = document.querySelector('.jucator');
-    const resetButton = document.querySelector('#restart');
-    const anuntj = document.querySelector('.anunta');
+    let box = Array.from(document.querySelectorAll('.box'));
+    let jucatorAles = document.querySelector('.jucator');
+    let restartButton = document.querySelector('#restart');
+    let anuntj = document.querySelector('.anunta');
 
     let tabeljoc = ['', '', '', '', '', '', '', '', ''];
     let currentPlayer = 'X';
@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
     if (ifWon) {
-            anunta(currentPlayer === 'X' ? PLAYERX_WON : PLAYERO_WON);
+            anuntj(currentPlayer === 'X' ? PLAYERX_WON : PLAYERO_WON);
             isGameActive = false;
             return;
         }
@@ -51,18 +51,18 @@ window.addEventListener('DOMContentLoaded', () => {
         anuntj(again);
     }
 
-    const anuntaj = (type) => {
+    const anuntj = (type) => {
         switch(type){
             case PLAYERO_WON:
-                anuntaj.innerHTML = 'Player <span class="playerO">O</span> Won';
+                anuntj.innerHTML = 'Player <span class="playerO">O</span> Won';
                 break;
             case PLAYERX_WON:
-                anuntaj.innerHTML = 'Player <span class="playerX">X</span> Won';
+                anuntj.innerHTML = 'Player <span class="playerX">X</span> Won';
                 break;
             case again:
-                anuntaj.innerText = 'Try again';
+                anuntj.innerText = 'Try again';
         }
-        anuntaj.classList.remove('.ascunde');
+        anuntj.classList.remove('.ascunde');
     };
 
     const isValidAction = (box) => {
@@ -78,14 +78,14 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     const changePlayer = () => {
-        playerDisplay.classList.remove(`player${currentPlayer}`);
+        jucatorAles.classList.remove(`player${currentPlayer}`);
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
         playerDisplay.innerText = currentPlayer;
         playerDisplay.classList.add(`player${currentPlayer}`);
     }
 
     const userAction = (box, index) => {
-        if(isValidAction(tile) && isGameActive) {
+        if(isValidAction(box) && isGameActive) {
             box.innerText = currentPlayer;
             box.classList.add(`player${currentPlayer}`);
             updateBoard(index);
@@ -97,7 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const resetBoard = () => {
         tabel = ['', '', '', '', '', '', '', '', ''];
         isGameActive = true;
-        anunta.classList.add('ascunde');
+        anuntj.classList.add('ascunde');
 
         if (currentPlayer === 'O') {
             changePlayer();
@@ -114,5 +114,5 @@ window.addEventListener('DOMContentLoaded', () => {
         box.addEventListener('click', () => userAction(box, index));
     });
 
-    resetButton.addEventListener('click', resetBoard);
+    restartButton.addEventListener('click', resetBoard);
 });
