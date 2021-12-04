@@ -10,12 +10,12 @@
     padding-top: 1px;
 }
 
-.titu {
-    color: white;
+h1 {
+    color: #eeba7f;
     text-align: center;
-    font-size: 35px;
+    font-size: 55px;
     font-family: 'Itim', cursive;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .display {
@@ -31,11 +31,13 @@
 }
 
 .container {
-    margin: 0 auto;
+    width:310px;
+    max-width: 310px;
+    margin: auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
-    max-width: 300px;
+    
 
 }
 
