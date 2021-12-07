@@ -43,10 +43,10 @@ h1 {
 
 section.afiseaza.anunta{
     margin:auto;
- 
-    width:12%;
+    font-size: 22px;
+    width:25%;
     font-family:cursive,Georgia, 'Times New Roman', Times, serif;
-    color: rgb(134, 17, 17);
+    color: #e9a251;
 }
 
 .box {
@@ -90,4 +90,8 @@ section.afiseaza.anunta{
 
 #restart {
     background-color: #eeba7f;
+}
+
+.anunta{
+    background-image: ;
 }
