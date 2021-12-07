@@ -41,6 +41,14 @@ h1 {
 
 }
 
+section.afiseaza.anunta{
+    margin:auto;
+ 
+    width:12%;
+    font-family:cursive,Georgia, 'Times New Roman', Times, serif;
+    color: rgb(134, 17, 17);
+}
+
 .box {
     border: 2px solid rgb(248, 234, 234);
     min-width: 100px;

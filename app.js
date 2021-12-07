@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
             case again:
                 anuntj.innerText = 'Try again';
         }
-        anuntj.classList.remove('.ascunde');
+        anuntj.classList.remove('ascunde');
     };
 
     const isValidAction = (box) => {
@@ -97,7 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const resetBoard = () => {
         tabeljoc = ['', '', '', '', '', '', '', '', ''];
         isActive = true;
-        anuntj.classList.add('.ascunde');
+        anuntj.classList.add('ascunde');
 
         if (currentPlayer === 'O') {
             changePlayer();
