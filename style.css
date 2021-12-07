@@ -43,10 +43,12 @@ h1 {
 
 section.afiseaza.anunta{
     margin:auto;
-    font-size: 22px;
-    width:25%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width:100%;
     font-family:cursive,Georgia, 'Times New Roman', Times, serif;
-    color: #e9a251;
+    color: #f79d37;
 }
 
 .box {
