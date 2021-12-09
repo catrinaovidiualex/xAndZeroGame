@@ -6,12 +6,29 @@
 
 .background {
     background-color: #748dbb;
-    height: 100vh;
-    padding-top: 1px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    /*height: 100vh;*/
+    
+}
+
+header{
+    background-color: #748dbb; 
 }
 
 body{
-    height:30%;
+    background-color: #748dbb; 
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin:0;
+    
+   
 }
 
 h1 {
@@ -23,11 +40,15 @@ h1 {
 }
 
 .display {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    /*margin-top: 1em;
+    margin-bottom: 1em;*/
 }
 
 .ascunde {
@@ -35,6 +56,10 @@ h1 {
 }
 
 .container {
+    
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
     width:310px;
     max-width: 310px;
     margin: auto;
@@ -46,6 +71,10 @@ h1 {
 }
 
 section.afiseaza.anunta{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
     margin:auto;
     text-align: center;
     font-size: 30px;
@@ -76,10 +105,10 @@ section.afiseaza.anunta{
 
 .control{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5em;
+    /*margin-top: 1.5em;*/
 }
 
 .control button {
@@ -95,6 +124,7 @@ section.afiseaza.anunta{
 
 
 #restart {
+    margin-top:5px;
     background-color: #eeba7f;
 }
 
@@ -104,12 +134,20 @@ section.afiseaza.anunta{
 
 footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width:100%;
-    max-height: 20%;
+    /*max-height: 20%;*/
     background-color: #748dbb;
     color:white;
+    padding: 20px;
+
+}
+
+footer p{
+height:20px;
+font-size: 15px;
+font-family:cursive,Georgia, 'Times New Roman', Times, serif;
 
 }
